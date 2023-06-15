@@ -20,7 +20,6 @@
 {
     "TD-Sky/fcitx.nvim",
     event = "VeryLazy",
-    config = true,
 }
 ```
 
@@ -45,9 +44,7 @@
         },
     },
     config = function()
-        local fcitx = require("fcitx")
-        fcitx.setup()
-        fcitx.enable_switch()
+        require("fcitx").enable_switch()
     end,
 }
 ```

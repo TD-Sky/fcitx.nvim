@@ -35,9 +35,4 @@ function M.disable_switch()
     vim.api.nvim_del_augroup_by_name("fcitx_switch")
 end
 
-function M.setup()
-    vim.api.nvim_create_user_command("FcitxEnableSwitch", M.enable_switch, {})
-    vim.api.nvim_create_user_command("FcitxDisableSwitch", M.disable_switch, {})
-end
-
 return M
