@@ -17,10 +17,7 @@
 使用 lazy
 
 ```lua
-{
-    "TD-Sky/fcitx.nvim",
-    event = "VeryLazy",
-}
+{ "TD-Sky/fcitx.nvim" }
 ```
 
 
@@ -31,6 +28,7 @@
 {
     "TD-Sky/fcitx.nvim",
     ft = { "markdown" },
+    event = "VeryLazy",
     keys = {
         {
             "<leader>ux",
@@ -49,7 +47,7 @@
 }
 ```
 
-- 进入 neovim 即开启自动切换（不再设置插件加载事件为`VeryLazy`）；
+- `VeryLazy`事件发生时开启自动切换（**自启动必须设置触发事件**）；
 - 仅为 markdown 使用；
 - 设置启用/关闭自动切换的快捷键。
 
